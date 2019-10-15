@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>NEW PATIENT</title>
+<script>
+</script>
+<style>
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+body{
+align:center;
+}
+#addDoc *{
+	padding: 18px 10px;
+	margin:3px;
+	width: 40%;
+	font-size: 22px;
+}
+</style>
+</head>
+<body>
+<h2 align=center >DISCHARGE PATIENT</h2>
+<form align="center" id="addDoc" method="POST" action="Discharge">
+
+	<input type="text" name="pid" placeholder="Patient ID  (pid)"><br>
+	<input type="number" name="days" placeholder="DAYS Admitted (0 if not on bed)"><br>
+	<input type="number" step="0.01" name="daycost" placeholder="Price per day"><br>
+	<span class="tooltip" ><input type="text" name="mc"  placeholder="medicine1 id,count1;medicine2 id,count2"><br><span class="tooltiptext"><i>Enter medicine ID then "," then quantity put ";" then next entry</i></span></span>
+	<br>
+	<input type="submit" value="GET RECEIPT">
+</form>
+</body>
+</html>
