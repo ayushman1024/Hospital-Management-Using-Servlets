@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -75,7 +73,6 @@ public class CreatePatient extends HttpServlet {
 			catch (SQLException e) { 
 				e.printStackTrace();
 			}
-		////
 		try {
 				String sql1 = "select patients from doctor where did = "+doctor;
 				Statement s = c.createStatement();
